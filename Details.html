@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>shopping mall</title>
+		<link rel="stylesheet" href="CSS/shoppingmall.css"/>
+		<script type="text/javascript" src="JS/jquery.min.js"></script>
+		<script type="text/javascript" src="JS/shoppingmall.js"></script>
+	</head>
+	<body>
+<!--------------------------------------------------TOP---------------------------------------------------------->
+<div class="btn_TOP"><a href="#" title="btn_TOP"></a></div>
+<header>
+<div class="top">
+		<div class="T_right">
+			<ul>
+				<li><a href="User.html">로그인</a><span>　|</span></li>
+				<li><a href="Message.html">가입</a></li>
+				<li> <a href="./ShoppingCart/ShoppingCart.html"> 장바구니 </a> </li>
+				<li> <a href="QnA.html"> 고객센터 </a></li>
+			</ul>
+		</div>
+</div>
+<!--------------------------------------------------NAV---------------------------------------------------------->	
+<nav style="position: relative; top: 0px;">
+	<div class="wrap">
+		<div class="logo"><a href="index.html"><img src="./index_files/logo.png"></a> </div>
+		<div class="nav">
+			<ul>
+				<!--Category : 마우스 오버 시 slide bar 형식의 창 open. -->
+				<li class="all" ><a href="#">카테고리</a>
+					<div class="all0" style="display: none;"> 
+					<div class="sidebar">
+						<h4> <a href="#"> 의류</a> </h4>
+						<h4> <a href="List.html"> ●남성의류 </a> </h4>
+						<!-- 조건 줘서 각 상품에 맞는 데이터만 불러와야함-->
+						<h4> <a href="#"> -아우터 </a> </h4>
+						<h4> <a href="#"> -상의 </a> </h4>
+						<h4> <a href="#"> -하의 </a> </h4>
+						<h4> <a href="#"> -신발 </a> </h4>
+						<h4> <a href="#"> -기타 </a> </h4>
+						<h4> <a href="List.html"> ●여성의류 </a> </h4>
+						<h4> <a href="#"> -아우터 </a> </h4>
+						<h4> <a href="#"> -상의 </a> </h4>
+						<h4> <a href="#"> -하의 </a> </h4>
+						<h4> <a href="#"> -신발 </a> </h4>
+						<h4> <a href="#"> -기타 </a> </h4>
+				</div>
+				<div class="contet" style="display: none;">
+				대분류
+				</div>
+				<div class="contet" style="display: none;">
+				중분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				중분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+			</div>
+				</li>
+				<li><a href="index.html">메인</a></li>
+				<li style="background: #302d34;"><a href="List.html" style="color: #fff;">남성</a></li>
+				<li><a href="Details.html#">여성</a></li>
+				</ul>
+		</div>
+		<!-- 검색 기능 -->
+		<div class="search">
+			<input type="text" placeholder="찾고 싶은 상품명을 입력하세요" id="ProName">
+			<p id="btn"></p>
+			<div class="list" style="display: none;">
+					<ul>
+						<li>남성의류</li>
+						<li>여성의류</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+</nav>
+</header>
+<div class="clearfix"></div>
+
+<div class="line"></div>
+<div class="wrop">
+<div class="L_wz"><p>현재 위치：남성 메인 &gt; 상의 &gt; 코트 &gt; Connive A 기다란 모직/실루엣 코트  </p></div>
+
+<div class="D_tops">
+	<div class="wrup">
+		<div class="D_left">
+			<div class="D_list" style="display: block;">
+				<img src="./Details_files/D_Lt1.png">
+			</div>
+			<div class="D_list">
+				<img src="./Details_files/D_Lt2.png">
+			</div>
+			<div class="D_list">
+				<img src="./Details_files/D_Lt3.png">
+			</div>
+			<div class="D_text">
+				<ul>
+					<li class="D_active"><img src="./Details_files/D_St1.png"></li>
+					<li><img src="./Details_files/D_St2.png"></li>
+					<li><img src="./Details_files/D_St3.png"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="D_right">
+			<div class="D_Rtxt">
+				<p>Connive A 기다란 모직/실루엣 코트 </p>
+				<a href="file://Details.html#">Connive</a><br>
+				<span>판매가： 210,000원</span><br>
+				<span>할인가：<p style="display: inline-block;">85,000원</p></span>
+			</div>
+			
+			
+			
+			<div class="D_Rlist">
+				
+			<form action = "/newshoppingcart" method = "post">
+			</div>
+			<div class="D_btn">
+				<ul>
+					<li><span>색상선택：</span><input type="button" value="" class="D_col"></li>
+					<li><span>사이즈선택：</span><input type="button" value="M"><input type="button" value="L"></li>
+					<li><span>수량：</span><input type="number" min="0" max="30" value="1" class="D_num"></li>
+				</ul>
+			</div>
+			
+			<input type="button" value="장바구니에 담기" class="D_add">
+			</form>
+			
+			<input type="button" value="찜한상품" class="D_shop">
+			<br>
+			<input type="button" value="구매" class="buy">
+			
+		</div>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+<div class="D_last">
+<div class="D_last1">
+	<div class="wrap">
+		<h1>
+			<span style="border-top: 2px #302d34 solid;">제품정보 DESCRIPTION</span>
+			<p style="display: inline-block;">|</p>
+			<span>세탁정보 MATERIALS</span>
+		</h1>
+		
+		<div class="D_st">
+			<img src="./Details_files/D_size.png">
+			<img src="./Details_files/D_tops.png">
+		</div>
+	</div>
+</div>
+<div class="D_last2">
+	<div class="wrap">
+		<h1>
+			<span style="border-top: 2px #302d34 solid;">제품 세부사항 DETAILS </span>
+		</h1>
+		<div class="D_st">
+			<p>★이 사진은 모델 착용 사진입니다. 특정 사이즈는 따로 문의해주세요. </p>
+			<p>★품질상의 문제가 발견되면 3일 이내에 반품이 가능하며 7일 이내에 교환이 가능합니다.</p>
+			<img src="./Details_files/D_pic1.png">
+			<img src="./Details_files/D_pic2.png">
+			<img src="./Details_files/D_pic4.png">
+			<img src="./Details_files/D_pic5.png">
+			<img src="./Details_files/D_pic6.png"><br>
+			<input type="button" value="메인화면으로" id="D_house">
+		</div>
+	</div>
+</div>
+<div class="D_last2">
+		<h1 id="D_2">
+			<span style="border-top: 2px #302d34 solid;">구매리뷰（0） </span>
+		</h1>
+		<div class="D_st1">
+			<div class="D_st2">
+				<h2>
+					<span style="border-bottom: 2px #302d34 solid;font-weight: bold;">전체</span>（0）
+					<span>첨부사진</span>（0）
+				</h2>
+			</div>
+			<p></p>
+			<input type="button" value="리뷰 작성" id="D_pbtn">
+		</div>
+</div>
+<div class="D_last2" id="D_last3">
+		<h1>
+			<span>최근리뷰 RECENT REVIEW</span>
+		</h1>
+			<ul>
+				<li><img src="./Details_files/L_08.png"><span><b>¥199.00</b>COKEIN </span></li>
+				<li><img src="./Details_files/L_07.png"><span><b>¥499.00</b>Connive</span></li>
+				<li><img src="./Details_files/L_08.png"><span><b>¥199.00</b>COKEIN </span></li>
+				<li><img src="./Details_files/L_07.png"><span><b>¥499.00</b>Connive</span></li>
+				<li><img src="./Details_files/L_08.png"><span><b>¥199.00</b>COKEIN </span></li>
+				<li><img src="./Details_files/L_07.png"><span><b>¥499.00</b>Connive</span></li>
+			</ul>
+</div>
+</div>
+
+</div>
+<div class="clearfix"></div>
+<div class="foot">
+	<div class="LF_nav">
+		<ul>
+
+		</ul>
+	</div>
+	<br>
+	<div class="LF_txt">
+	</div>
+</div>
+	
+
+</body></html>

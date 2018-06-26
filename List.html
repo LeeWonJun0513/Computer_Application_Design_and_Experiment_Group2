@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0221)List.html# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>상품 목록</title>
+		<link rel="stylesheet" href="./List_files/shoppingmall.css">
+		<script type="text/javascript" src="./List_files/jquery.min.js"></script>
+		<script type="text/javascript" src="./List_files/shoppingmall.js"></script>
+	</head>
+	<body>
+<!--------------------------------------------------TOP---------------------------------------------------------->
+<div class="btn_TOP" style="display: block;"><a href="List.html#" title="btn_TOP"></a></div>
+<header>
+<div class="top">
+		<div class="T_left">
+			<ul>
+				<li><a href="clientview/List.html#">장바구니 담기</a></li>
+				<li><a href="#">장바구니 담기</a></li>
+			</ul>
+		</div>
+		<div class="T_right">
+			<ul>
+				<li> <a href="User.html"> 로그인 </a> <span> | </span> </li>
+				<li> <a href="Message.html"> 가입 </a> </li>
+				<li> <a href="./ShoppingCart/ShoppingCart.html"> 장바구니 </a> </li>
+				<li> <a href="#"> 마이 페이지 </a> </li>
+				<li> <a href="QnA.html"> 고객센터 </a></li>
+			</ul>
+		</div>
+</div>
+<!--------------------------------------------------NAV---------------------------------------------------------->	
+<nav style="position: fixed; top: 0px;">
+	<div class="wrap">
+		<div class="logo"><a href="index.html"><img src="./index_files/logo.png"></a> </div>
+		<div class="nav">
+			<ul>
+				<li class="all"><a href="List.html#">전체상품</a>
+				<div class="all0" style="display: none;"> 
+    			<div class="sidebar">
+					<h4> <a href="#"> 의류</a> </h4>
+					<h4> <a href="List.html"> 남성의류 </a> </h4>
+					<!-- 조건 줘서 각 상품에 맞는 데이터만 불러와야함-->
+					<h4> <a href="#"> -아우터 </a> </h4>
+					<h4> <a href="#"> -상의 </a> </h4>
+					<h4> <a href="#"> -하의 </a> </h4>
+					<h4> <a href="#"> -신발 </a> </h4>
+					<h4> <a href="#"> -기타 </a> </h4>
+					<h4> <a href="List.html"> 여성의류 </a> </h4>
+					<h4> <a href="#"> -아우터 </a> </h4>
+					<h4> <a href="#"> -상의 </a> </h4>
+					<h4> <a href="#"> -하의 </a> </h4>
+					<h4> <a href="#"> -신발 </a> </h4>
+					<h4> <a href="#"> -기타 </a> </h4>
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/big.png">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/medium.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/medium.png">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+			<div class="contet" style="display: none;">
+				
+				<br>
+				<img src="./List_files/small.PNG">
+			</div>
+		</div>
+			</li>
+			<li> <a href="index.html">메인 </a> </li>
+			<li> <a href="List.html">남성 </a> </li>
+			<li> <a href="List.html">여성 </a> </li>
+
+		</ul>
+	</div>
+	<div class="search">
+		<input type="text" placeholder="찾고 싶은 상품명을 입력하세요" id="ProName">
+		<p id="btn"></p>
+		<div class="list" style="display: none;">
+				<ul>
+						<li>남성의류</li>
+						<li>여성의류</li>
+				</ul>
+			</div>
+	</div>
+</div>
+</nav>
+</header>
+<div class="clearfix"></div>
+
+<div class="line"></div>
+<div class="wrop">
+<div class="L_wz"></div>
+
+<div class="L_left">
+	<h1>의류 카테고리</h1>
+	<div id="L_fl">
+			<h2>남성의류</h2>
+			<ul style="display: block;">
+				<li>상의</li>
+				<li>하의</li>
+				<li>신발</li>
+				<li>외투</li>
+				<li>기타</li>
+
+			</ul>
+			<h2>여성의류</h2>
+			<ul style="display: block;">
+				<li>상의</li>
+				<li>하의</li>
+				<li>신발</li>
+				<li>외투</li>
+				<li>기타</li>
+			</ul>
+		</div>
+</div>
+
+
+<div class="L_right">
+	<div class="L_top">
+		<div class="L_txt">
+			<h1>너의 옷<br><span>Your Clothes!!</span></h1>
+			<p>옷 한 번 골라보세요</p>
+			
+			<p>남성 의류</p>
+			<p>여성 의류</p>
+			<p>참 좋습니다.</p>
+			<ul>
+				<li><a href="List.html#">남성의류</a></li>
+				<li><a href="List.html#">여성의류</a></li>
+			</ul>
+		</div>
+		<img src="./List_files/L_pic.png">
+	</div>
+
+	<div class="L_chose">
+		<div class="L_sx">
+
+		</div>
+		<div class="L_cb">
+			<input type="checkbox" name="" value="" class="L_one"><label>가격 높은 순</label>
+			<input type="checkbox" name="" value="" class="L_two"><label>가격 낮은 순</label>
+		</div>
+		<div class="L_page">
+			 <select>
+  				<option selected="">16</option>
+ 				<option>32</option>
+  				<option>48</option>
+ 			</select>
+			<label>페이지</label>
+			<span>&lt; 1/18 &gt;</span>
+		</div>
+	</div>
+
+<div class="clearfix"></div>
+	<div class="L_pic">
+		<ul>
+			<li><a href="Details.html"><img src="./List_files/L_01.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_02.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_03.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_04.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_05.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_06.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_07.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_08.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_09.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_10.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_11.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_12.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_13.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_14.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_15.png"><b>10000원</b></a></li>
+			<li><a href="List.html#"><img src="./List_files/L_16.png"><b>10000원</b></a></li>
+			
+		</ul>
+	</div>
+</div>
+<div class="clearfix"></div>
+<div class="L_text">
+	<p>1 - 59 / 전체 1021개의 제품  </p>
+	<div class="L_btn">
+		<input type="button" name="" value="1" style="background: #302d34;color: #fff;">
+		<input type="button" name="" value="2">
+		<input type="button" name="" value="3">
+		<input type="button" name="" value="4">
+		<input type="button" name="" value="...">
+		<input type="button" name="" value="18">
+		<input type="button" name="" value="다음" class="L_last">
+	</div>
+</div>
+
+</div>
+	<div class="LF_txt">
+			<p> shopping mall</p>
+	</div>
+</div>
+	
+
+</body></html>

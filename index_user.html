@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>쇼핑몰</title>
+		<link rel="stylesheet" href="./index_files/shoppingmall.css">
+		<script type="text/javascript" src="./index_files/jquery.min.js"></script>
+		<script type="text/javascript" src="./index_files/shoppingmall.js"></script>
+	</head>
+	<body>
+<!--------------------------------------------------TOP---------------------------------------------------------->
+<div class="btn_TOP" style="display: none;"><a href="index.html#" title="btn_TOP"></a></div>
+<header>
+<div class="top">
+		<div class="T_left">
+			<ul>
+
+			</ul>
+		</div>
+		<div class="T_right">
+			<ul>
+				<li> <a href="User.html"> 로그아웃 </a> <span> | </span> </li>
+				<li> <a href="ShoppingCart.html"> 장바구니 </a> <span> | </span></li> 
+				<li> <a href="QnA.html"> 고객센터 </a></li>
+				<li> <a href="admin.html"> 관리자 </a></li>
+				
+			</ul>
+		</div>
+</div>
+<!--------------------------------------------------NAV---------------------------------------------------------->	
+<nav style="position: relative; top: 0px;">
+	<div class="wrap">
+		<div class="logo"><a href="index.html"><img src="./index_files/logo.png"></a> </div>
+		<div class="nav">
+			<ul>
+				<li class="all" ><a href="#">카테고리</a>
+					<div class="all0" style="display: none;"> 
+					<div class="sidebar">
+						<h4> <a href="#"> 의류</a> </h4>
+						<h4> <a href="List.html"> 남성의류 </a> </h4>
+						<!-- 조건 줘서 각 상품에 맞는 데이터만 불러와야함-->
+						<h4> <a href="#"> -아우터 </a> </h4>
+						<h4> <a href="#"> -상의 </a> </h4>
+						<h4> <a href="#"> -하의 </a> </h4>
+						<h4> <a href="#"> -신발 </a> </h4>
+						<h4> <a href="#"> -기타 </a> </h4>
+						<h4> <a href="List.html"> 여성의류 </a> </h4>
+						<h4> <a href="#"> -아우터 </a> </h4>
+						<h4> <a href="#"> -상의 </a> </h4>
+						<h4> <a href="#"> -하의 </a> </h4>
+						<h4> <a href="#"> -신발 </a> </h4>
+						<h4> <a href="#"> -기타 </a> </h4>
+				</div>
+				<div class="contet" style="display: none;">
+				대분류
+				</div>
+				<div class="contet" style="display: none;">
+				중분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				중분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+				<div class="contet" style="display: none;">
+				소분류
+				</div>
+			</div>
+				</li>
+				<!--<li style="background: #302d34;"><a href="index.html" style="color: #fff;">메인</a></li>-->
+			</ul>
+		</div>
+		<div class="search">
+			<input type="text" placeholder="찾고 싶은 상품명을 입력하세요" id="ProName">
+			<p id="btn"></p>
+			<div class="list" style="display: none;">
+					<ul>
+						<li>남성의류</li>
+						<li>여성의류</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+</nav>
+</header>
+<div class="clearfix"></div>
+
+
+<div class="line"></div>
+<div class="wrop">
+
+
+<div class="clsz">
+	<div class="clsz_nav">
+		<h1>남성의류</h1>
+		<ul>
+			<li><a href="##">상의</a><span>|</span></li>
+			<li><a href="##">하의</a><span>|</span></li>
+			<li><a href="##">신발</a><span>|</span></li>
+			<li><a href="##">기타</a><span>|</span></li>
+		
+			<li class="more"><a href="##">MORE</a></li>
+		</ul>
+	</div>
+	<div class="pic1">
+	<ul>
+		<li><img src="./index_files/styg_1.png"><span style="bottom: -400px;"></span></li>
+		<li class="sp2"><img src="./index_files/jeans_1.png"><span style="bottom: -400px;"></span></li>
+		<li class="sp3"><img src="./index_files/pants_1.png"><span style="bottom: -400px;"></span></li>
+	</ul>
+	</div>
+	<div class="pic2">
+	<ul>
+		<li><img src="./index_files/style_2.png"></li>
+		<li class="s3"><img src="./index_files/style_3.png"></li>
+	</ul>
+	</div>
+	<div class="pic3">
+	<ul>
+		<li><img src="./index_files/style_4.png"></li>
+		<li class="s5"><img src="./index_files/style_5.png"></li>
+	</ul>
+	</div>
+</div>
+
+<div class="ssxl">
+	<div class="ssxl_nav">
+		<h1>여성의류</h1>
+		<ul>
+			<li><a href="##">상의</a><span>|</span></li>
+			<li><a href="##">하의</a><span>|</span></li>
+			<li><a href="##">신발</a><span>|</span></li>
+			<li><a href="##">기타</a><span>|</span></li>
+			<li class="more"><a href="##">MORE</a></li>
+		</ul>
+	</div>
+	<div class="pic1">
+	<ul>
+		<li><img src="./index_files/boots_1.png"><span style="bottom: -400px;"></span></li>
+	</ul>
+	</div>
+	<div class="pic2">
+	<ul>
+		<li><img src="./index_files/boot_2.png"></li>
+		<li class="s4"><img src="./index_files/boot_3.png"></li>
+	</ul>
+	</div>
+	<div class="pic3">
+		<ul>
+			<li><img src="./index_files/shoe_1.png"><a href="##">GAWSS FOOT</a></li>
+			<li><img src="./index_files/shoe_2.png"><a href="##">Anthony Miles</a></li>
+			<li><img src="./index_files/shoe_3.png"><a href="##">Android Homme</a></li>
+			<li><img src="./index_files/shoe_4.png"><a href="##">Reebok</a></li>
+			<li><img src="./index_files/shoe_5.png"><a href="##">JUMBOUGG</a></li>
+			<li><img src="./index_files/shoe_6.png"><a href="##">adidas Originals</a></li>
+			<li><img src="./index_files/shoe_7.png"><a href="##">converse</a></li>
+			<li><img src="./index_files/shoe_8.png"><a href="##">Arubafootwear</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+<footer>
+	<div class="F_nav">
+		<ul>
+			<li><a href="##">쇼핑몰 2조</a></li>
+
+		</ul>
+	</div>
+	<br>
+</footer>
+	
+
+</body></html>

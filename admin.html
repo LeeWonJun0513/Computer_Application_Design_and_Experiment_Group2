@@ -1,0 +1,252 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta name="robots" content="noindex,nofollow" />
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/reset.css" /> 
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" /> 
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" /> 
+	<link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" /> 
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/style.css" /> 
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/mystyle.css" /> 
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/switcher.js"></script>
+	<script type="text/javascript" src="js/toggle.js"></script>
+	<script type="text/javascript" src="js/ui.core.js"></script>
+	<script type="text/javascript" src="js/ui.tabs.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".tabs > ul").tabs();
+	});
+	</script>
+	<title>관리자 페이지</title>
+</head>
+
+<body>
+
+<div id="main">
+
+
+	<div id="tray" class="box">
+
+		<p class="f-left box">
+
+		
+			<span class="f-left" id="switcher">
+				<a href="#" rel="1col" class="styleswitch ico-col1" title="Display one column"><img src="design/switcher-1col.gif" alt="1 Column" /></a>
+				<a href="#" rel="2col" class="styleswitch ico-col2" title="Display two columns"><img src="design/switcher-2col.gif" alt="2 Columns" /></a>
+			</span>
+
+			<strong>관리자 페이지</strong>
+
+		</p>
+
+		<p class="f-right">User: <strong>관리자</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="User.html" id="logout">로그 아웃</a></strong></p>
+
+	</div> 
+
+	<hr class="noscreen" />
+
+
+	<div id="menu" class="box">
+
+		<ul class="box f-left">
+			<li id="menu-active"><a href="index.html"><span><strong>메인 화면 &raquo;</strong></span></a></liid="menu-active">
+		</ul>
+
+		<ul class="box">
+			<li><a href="List.html"><span>카테고리</span></a></li>
+		
+		</ul>
+
+	</div> 
+
+	<hr class="noscreen" />
+
+
+	<div id="cols" class="box">
+
+
+		<div id="aside" class="box">
+
+			<div class="padding box">
+
+
+				<form action="#" method="get" id="search">
+					<fieldset>
+						<legend>검색</legend>
+
+						<p><input type="text" size="17" name="" class="input-text" />&nbsp;<input type="submit" value="OK" class="input-submit-02" /><br />
+					
+					</fieldset>
+				</form>
+
+		
+				<p id="btn-create" class="box"><a href="admin_reg.html"><span>상품 등록</span></a></p>
+
+			</div>
+
+			<ul class="box">
+				<li><a href="#">상품 관리  </a></li>
+				<li><a href="#">주문 상태</a></li>
+				<!--<li><a href="#">매출 관리</a></li>-->
+				<li><a href="#">상품 문의 답변</a></li>
+			</ul>
+
+		</div> 
+
+		<hr class="noscreen" />
+
+		<div id="content" class="box">
+
+			<h1>쇼핑몰 관리</h1>
+
+			<h2>2조</h2>
+		
+
+			<h3 class="tit">상품 관리</h3>
+
+            <ul class="box">
+                <a class="msg done" href="admin_reg.html">상품 등록</a>
+
+                <a class="msg warning" href="admin_update.html">상품 수정</a>                           
+
+                <a class="msg error" href="admin_delete.html">상품 삭제</a>
+
+              
+                <h3 class="tit">주문 상태</h3>
+
+                <div class="tabs box">
+                    <ul>
+                        <li><a href="#tab01"><span>주문 내역</span></a></li>
+                        <li><a href="#tab02"><span>취소 내역</span></a></li>
+                        <li><a href="#tab03"><span>반품 내역</span></a></li>
+                    </ul>
+                </div> 
+             
+                <div id="tab01">
+
+                    <p>주문 내역</p>
+
+                </div>
+               
+                <div id="tab02">
+
+                    <p>취소 내역</p>
+
+                </div> 
+                
+                <div id="tab03">
+
+                    <p>반품 내역</p>
+
+                </div>
+             <!--
+                <h3 class="tit">매출 관리</h3>
+                <table>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#">1 </a></td>
+                        <td><a href="#">2 </a></td>
+                    </tr>
+                    <tr class="bg">
+                        <td><a href="#" >3 </a></td>
+                        <td><a href="#">4 </a></td>
+                        <td><a href="#">5 </a></td>
+                        <td><a href="#">6 </a></td>
+                        <td><a href="#">7 </a></td>
+                        <td><a href="#">8 </a></td>
+                        <td><a href="#">9 </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">10 </a></td>
+                        <td><a href="#">11</a></td>
+                        <td><a href="#">12</a></td>
+                        <td><a href="#">13</a></td>
+                        <td><a href="#">14</a></td>
+                        <td><a href="#">15</a></td>
+                        <td><a href="#">16</a></td>          
+                    </tr>
+                    <tr class="bg">
+                        <td><a href="#">17</a></td>
+                        <td><a href="#">18</a></td>
+                        <td><a href="#">19</a></td>
+                        <td><a href="#">20</a></td>
+                        <td><a href="#">21</a></td>
+                        <td><a href="#">22</a></td>
+                        <td><a href="#">23</a></td>
+                    </tr>
+                    <tr>                      
+                        <td><a href="#">24 </a></td>
+                        <td><a href="#">25 </a></td>
+                        <td><a href="#">26 </a></td>
+                        <td><a href="#">27 </a></td>
+                        <td><a href="#">28 </a></td>
+                        <td><a href="#">29 </a></td>
+                        <td><a href="#">30 </a></td>
+                    </tr>
+                </table>-->
+
+               
+                <h3 class="tit">상품 문의 답변</h3>
+                <fieldset>
+                    <legend>답변</legend>
+                    <table class="nostyle">
+                        <tr>
+                            <td style="width:70px;">제목:</td>
+                            <td><input type="text" size="40" name="" class="input-text" /></td>
+                        </tr>
+                        <tr>
+                            <td>회원:</td>
+                            <td><input type="text" size="40" name="" class="input-text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="va-top">내용:</td>
+                            <td><textarea cols="75" rows="7" class="input-text"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>문의 종류:</td>
+                            <td>
+                                <label><input type="radio" /> 상품문의</label> &nbsp;
+                                <label><input type="radio" /> 배송문의</label> &nbsp;
+                                <label><input type="radio" /> 기타문의</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="t-right"><input type="submit" onclick="alert('답변 되었습니다.')" class="input-submit" value="답변" /></td>
+							<!--<h1><button type="submit" onclick="alert('전송되었습니다.')">문의하기</button></h1>-->
+                        </tr>
+                    </table>
+                </fieldset>
+
+
+            </ul></div> 
+
+	<hr class="noscreen" />
+
+	
+	<div id="footer" class="box">
+
+		<p class="f-left">&copy; 2조 <a href="#">shopping mall</a></p>
+
+
+	</div> 
+</div> <!-- /main -->
+
+</body>
+</html>
